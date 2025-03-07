@@ -6,7 +6,7 @@ from aiogram.filters import Command
 TOKEN = "8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk"
 
 bot = Bot(token=TOKEN)
-dp = Dispatcher()  # В Aiogram 3.x Dispatcher создаётся без параметров
+dp = Dispatcher()  # Создаём диспетчер
 
 # Создаём клавиатуру с 2 кнопками
 keyboard = ReplyKeyboardMarkup(
@@ -23,7 +23,6 @@ async def send_welcome(message: types.Message):
     await message.answer("👋 Добро пожаловать! Выберите один из вариантов:", reply_markup=keyboard)
 
 async def main():
-    dp.include_router(dp)  # Подключаем диспетчер
     await dp.start_polling(bot)  # Запуск бота
 
 if __name__ == "__main__":
