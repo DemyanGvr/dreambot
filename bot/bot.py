@@ -4,8 +4,8 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 TOKEN = "8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk"
 
-bot = Bot(token=TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher()
+bot = Bot(token=8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk)
 
 # Создаём клавиатуру с 2 кнопками
 keyboard = ReplyKeyboardMarkup(
