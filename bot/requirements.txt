@@ -6,3 +6,4 @@ multidict
 yarl
 cffi
 pycparser
+python==3.10
