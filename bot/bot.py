@@ -5,7 +5,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 TOKEN = "8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk"
 
 bot = Bot(token=TOKEN)
-dp = Dispatcher()
+dp = Dispatcher(bot)
 
 # Создаём клавиатуру с 2 кнопками
 keyboard = ReplyKeyboardMarkup(
@@ -17,7 +17,7 @@ keyboard = ReplyKeyboardMarkup(
 )
 
 # Обрабатываем команду /start
-@dp.message()
+@dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     if message.text == "/start":
         await message.answer("👋 Добро пожаловать! Выберите один из вариантов:", reply_markup=keyboard)
