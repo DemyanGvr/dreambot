@@ -5,7 +5,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 TOKEN = "8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk"
 
 dp = Dispatcher()
-bot = Bot(token=8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk)
+bot = Bot(token="8107472199:AAFMbroM47_8tzWpXVmiXKU27ssd8tzKyJk")  # Добавлены кавычки
 
 # Создаём клавиатуру с 2 кнопками
 keyboard = ReplyKeyboardMarkup(
