@@ -12,7 +12,7 @@ dp = Dispatcher()  # Создаём диспетчер
 keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="🔗 Регистрация со спецпредложением")],
-        [KeyboardButton(text="💬 Приватный чат с инсайдерской схемой")]
+        [KeyboardButton(text="💬 Приватный чат с инсайдерской схемой", url="https://t.me/azamatend")]
     ],
     resize_keyboard=True
 )
